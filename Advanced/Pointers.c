@@ -13,9 +13,9 @@ The notation is as follows:
 char * name = "John"; 
 
 The line does three things: 
-    - Allocates a local (stack) variable called name, which is a pointer to a single character
-    - Causes the string "John" to appear somewhere in the program memory (after it is compiled and executed, of course) 
-    - Initializes the name argument to point to where the J character resides at (which is followed by the rest of the string in the memory)
+- Allocates a local (stack) variable called name, which is a pointer to a single character
+- Causes the string "John" to appear somewhere in the program memory (after it is compiled and executed, of course) 
+- Initializes the name argument to point to where the J character resides at (which is followed by the rest of the string in the memory)
 
 
 D E F E F E R E N C I N G
