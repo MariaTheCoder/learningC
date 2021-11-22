@@ -9,6 +9,10 @@ Recursion is often used in two situations:
 - With data structures such as linked lists, binary trees etc. 
 - Exploring possible scenarios in game such as chess
 
+Recursion always consists of two main parts. 
+* A terminating case that indicates when the recursion will finish 
+* A call to itself that must make progress towards the terminating case
+
 */
 
 #include <stdio.h>
