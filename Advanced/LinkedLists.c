@@ -64,6 +64,11 @@ int remove_by_value(node_t **head, int val)
   node_t *current = *head;
   node_t *temp_node = NULL;
 
+  if (*head == NULL)
+  {
+    return -1;
+  }
+
   if (current->val == val)
   {
     return pop(head);
