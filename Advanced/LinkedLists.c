@@ -73,18 +73,15 @@ int remove_by_value(node_t **head, int val)
   {
     if (current->next->val == val)
     {
-      current = current->next;
-      free(current);
-      return 0;
+      temp_node = current->next;
+      retval = temp_node->val;
+      current->next = temp_node->next;
+      free(temp_node);
+
+      return retval;
     }
+    current = current->next;
   }
-
-  temp_node = current->next;
-  retval = temp_node->val;
-  current->next = temp_node->next;
-  free(temp_node);
-
-  return retval;
 }
 
 int main()
@@ -100,7 +97,7 @@ int main()
   test_list->next->next->next->val = 4;
   test_list->next->next->next->next = NULL;
 
-  remove_by_value(&test_list, 2);
+  remove_by_value(&test_list, 4);
 
   print_list(test_list);
 }
